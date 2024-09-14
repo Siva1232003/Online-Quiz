@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Login & Signup - Quiz Maker</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav>
+      <div class="navigation">
+        <div class="name">
+            <h1>QUIZ MAKER</h1>
+        </div>        
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="title">
+        <h1>Welcome to Quiz Maker</h1>
+      </div>
+    </header>
+
+    <!-- Flip Container -->
+    <section class="container">
+      <div class="flip-container" id="flip-container">
+        <div class="flipper">
+          <!-- Login Form -->
+          <div class="login-form form-panel">
+            <div class="wrapper">
+              <div class="title">
+                <span>Login Form</span>
+              </div>
+              <form id="loginForm">
+                <div class="row">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="loginEmailOrPhone" placeholder="Email or Phone" required>
+                  <span id="loginEmailOrPhoneError" class="error"></span>
+                </div>
+                <div class="row">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="loginPassword" placeholder="Password" required>
+                  <span id="loginPasswordError" class="error"></span>
+                </div>
+                <p class="pass"><a href="#">Forgot password?</a></p>
+                <div class="button">
+                  <input type="submit" value="Login">
+                </div>
+                <div class="signup-link">Not a member? <a href="#" id="flip-to-signup">Signup now</a></div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Signup Form -->
+          <div class="signup-form form-panel">
+            <div class="wrapper">
+              <div class="title">
+                <span>Signup Form</span>
+              </div>
+              <form id="signupForm">
+                <div class="row">
+                  <i class="fas fa-envelope"></i>
+                  <input type="text" id="signupEmailOrPhone" placeholder="Email or Phone" required>
+                  <span id="signupEmailOrPhoneError" class="error"></span>
+                </div>
+                <div class="row">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="signupPassword" placeholder="Password" required>
+                  <span id="signupPasswordError" class="error"></span>
+                </div>
+                <div class="row">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                  <span id="confirmPasswordError" class="error"></span>
+                </div>
+                <div class="button">
+                  <input type="submit" value="Signup">
+                </div>
+                <div class="signup-link">Already a member? <a href="#" id="flip-to-login">Login here</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>      
+<script src="js/create button.js"></script>
+</body>
+</html>
